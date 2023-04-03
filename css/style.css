@@ -1,0 +1,346 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,500&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+} */
+/* star text */
+html{
+    font-size: 62.5%;
+}
+h1,h2,h3{
+    color: #161616; 
+    /* font-family: 'Montserrat', sans-serif; */
+}
+h1{
+    font-size: 2.4rem;
+}
+    h2{
+        font-size: 2.0rem;
+    }
+        h3{
+            font-size: 1.8rem;
+        }
+            h4{
+            font-size: 1.6rem;
+            }
+                h5{
+                    font-size: 1.4rem;
+                }
+p{
+    /* estilo */
+    color: #161616; font-family: 'Montserrat', sans-serif; font-size: 1.5em;
+    /* interliniado */
+    line-height: 2.4rem;
+    /* sangría */
+    text-indent: 1.6rem;
+}
+/* end text */
+/* star header */
+header img{
+    width: 100%;
+    height: auto;
+}
+/* star nav */
+nav{
+    background-color:#ffff;
+    padding: 20px;
+    display: inline-block
+}
+    nav img{
+        width: 160px;
+    }
+        nav div ul li {
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Montserrat',
+            sans-serif;
+            font-size: 1.6rem;
+        }
+        nav div ul li a{
+            font-weight: 300;
+            color: #161616 !important;
+        }
+            nav div ul li:hover{
+                background-color: #e49ee0;
+                text-decoration: nome;
+            }
+
+.text-style__tittle{
+    text-align: center;
+    font-size: 3.0rem;
+    font-weight: bold;
+    margin: 2.0rem;
+    padding: 3.0rem;
+
+}
+    .text-style_p2{
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 2.0rem;
+        padding: 3.0rem;
+        color: #555555;
+        text-align: center;
+    }
+/* selectores de etiqueta */
+.bg-pattern{
+/* background-image: url(../img/background/pattern_1.png) */
+background-color: #fffcfc;
+}
+.bg_wrap_yellow{
+    background-image: url(../img/background/onda_yellow.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+
+}
+    /* CONTENEDORES */
+    .contenedor-text{
+        height: auto;
+        margin: 0 4.4rem;
+        padding: 2.0rem;
+        text-align: start;
+    }
+/* BOTONES */
+.btn--card__color {
+    width: 90%;
+    background-color: #e2058de3;
+    border-color:#e2058de3;
+    font-size: 1.8rem;
+    text-decoration: nome;
+}
+    button a{
+        color: aliceblue;
+    }
+
+
+/* Contenedor cards polfolio */
+.container-flex-lg{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn--card__color:hover{
+    background-color: #6b0343e3;
+    border-color:#6b0343e3
+}
+/* Cards porfolio */
+.text-style{
+    color: aliceblue;
+}
+.bg-black-img1{
+    background-image:url(../img/proyectos/portada_amazon.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #161616;
+}
+.bg-black-img2{
+    background-image:url(../img/proyectos/portada.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #161616;
+}
+.bg-black-img3{
+    background-image:url(../img/proyectos/Desktop\ -\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #161616;
+}
+    .card_pfolio{
+        /* contenedor */
+        width: 60%;
+        height: 650px;
+        margin:20px;
+        border-radius: 2%;
+        padding: 2.0rem;
+    }
+
+        /* flex cards_home */
+        .card_items-flex{
+            width: 100%;
+            height: 100%;
+            padding: 3.0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            background-color: rgb(22, 22, 22,0.6);
+        }
+/* grid galeria */
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "fot1 fot2"
+    "fot1 fot3"
+    "fot1 fot4";
+}
+.item{
+    margin: 1.2rem;;
+}
+    .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4%;
+        filter: grayscale(0.7);
+    }
+    .item img:hover{
+        filter:none;
+    }
+
+.foto1-grid{
+    grid-area: fot1;
+}
+.foto2-grid{
+    grid-area: fot2;
+}
+.foto3-grid{
+    grid-area: fot3;
+}
+.foto4-grid{
+    grid-area: fot4;
+}
+        /* grid para page_about_me */
+#about_me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template: repeat(5,180px);
+    grid-template-areas:
+    "img t1"
+    "img p1"
+    "img t2"
+    "img p2"
+    "img btn";
+}
+    .img-grid{
+        grid-area: img;
+    }
+    .tittle1_grid{
+        grid-area: t1;
+    }
+    .p1_grid{
+        grid-area: p1;
+    }
+    .tittle2_grid{
+        grid-area: t2;
+    }
+    .p2_grid{
+        grid-area: p2;
+    }
+    .btn_grid{
+        grid-area: btn;
+    }
+        .container-text__about-me {
+            width: 80%;
+            height: auto;
+            margin: 0 4.4rem;
+            padding: 2.0rem;
+            text-align: start;
+        }
+
+/* Contenedor Footer */
+.container-footer{
+    width: 100%;
+    height: auto;
+    margin-top: 4.8rem;
+    padding: 2.0rem;
+}
+.img_foto{
+    width: 50%;
+    height: 1vh;
+}
+/* arcordion */
+.accordion-button{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+    .accordion-button:focus{
+    background-color: #f070a1;
+    border-color: #ee879d;
+    box-shadow: 0 0 0 0.25rem rgba(206, 109, 138, 0.25);
+    }
+        .accordion-button:not(.collapsed){
+        background-color: #f8b1cc;}
+            .accordion-body img{
+                max-width: 100%;
+                height: auto;
+            }
+
+/* barras de progreso */
+.progress{
+    height: 2.0rem;
+    font-size: 1.6rem;
+    background-color: #fad8e9;
+    margin: 3.0rem;
+
+}
+    .progress-bar{
+        background-color: #ca599b;
+    }
+
+/* cards_experiencia */
+.card{
+    border-color:hsl(40, 100%, 97%,0.1%);
+}
+    .card-bg-2{
+        background-color: #f070a1;
+    }
+
+/* imput */
+.form-label {
+    font-size: 1.6rem;
+}
+    .form-control{
+        font-size: 1.6rem;
+    }
+        .form-control:focus{
+            border-color: #e9dde0;
+            box-shadow: 0 0 0 0.25rem rgba(247, 235, 238, 0.25);
+        }
+
+
+        /* @media para responsive */
+
+        @media (max-width: 768px) {
+            /* responsive para grid de galeria */
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas:
+                "fot1 fot2"
+                "fot3 fot4"
+            }
+            /* responsive para grid de about_me */
+            #about_me{
+                grid-template-columns: 1fr;
+                grid-template: repeat(6,16.6vh);
+                grid-template-areas:
+                "img"
+                "img"
+                "p1"
+                "t1"
+                "p2"
+                "btn";
+            }
+            /* tamaño de letras */
+            h1{
+                font-size: 2.0rem;
+            }
+                h2{
+                    font-size: 1.8rem;
+                }
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                        h4{
+                        font-size: 1.4rem;
+                        }
+                            h5{
+                                font-size: 1.2rem;
+                            }
+                            p{
+                                font-size: 1.3rem;
+                            }
+                .card_pfolio{
+                    height: 480px;
+                }
+        }
