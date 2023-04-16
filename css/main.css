@@ -14,11 +14,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 300;
 }
 
 h3 {
@@ -26,7 +26,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -37,16 +37,15 @@ p {
   /* estilo */
   color: #161616;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
   /* interliniado */
-  line-height: 2.4rem;
+  line-height: 2.5rem;
   /* sangría */
-  text-indent: 1.6rem;
+  text-indent: 1.5rem;
 }
 
 .text-style__tittle {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 2rem;
   padding: 3rem;
@@ -54,11 +53,10 @@ p {
 
 .text-style_p2 {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 2rem;
   padding: 3rem;
   color: #555555;
-  text-align: center;
 }
 
 @media (max-width: 768px) {

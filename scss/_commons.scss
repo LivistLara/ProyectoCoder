@@ -1,50 +1,49 @@
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main_font;
 }
 html{
     font-size: 62.5%;
 }
 h1,h2,h3{
-    color: #161616;
+    color:map-get($map:$paleta, $key:bl );
     /* font-family: 'Montserrat', sans-serif; */
 }
 h1{
-    font-size: 2.4rem;
+    font-size: $text_xl;
 }
     h2{
-        font-size: 2.0rem;
+        font-size:$text_lg;
     }
         h3{
-            font-size: 1.8rem;
+            font-size: $text_md;
         }
             h4{
-            font-size: 1.6rem;
+            font-size: $text_sm;
             }
                 h5{
-                    font-size: 1.4rem;
+                    font-size: $text_xs;
                 }
 p{
     /* estilo */
-    color: #161616; font-family: 'Montserrat', sans-serif; font-size: 1.5em;
+    color: map-get($map:$paleta, $key:bl); font-family: $main_font;
     /* interliniado */
-    line-height: 2.4rem;
+    line-height: $text_xl;
     /* sangría */
-    text-indent: 1.6rem;
+    text-indent: $text_sm
 }
 
 .text-style__tittle{
-    text-align: center;
-    font-size: 3.0rem;
-    font-weight: bold;
-    margin: 2.0rem;
-    padding: 3.0rem;
+    text-align: $center;
+    font-size: $text_xl;
+    font-weight: $text_bold;
+    margin: $m_2;
+    padding: $p_3;
     }
     .text-style_p2{
-        text-align: center;
-        font-size: 1.6rem;
-        margin: 2.0rem;
-        padding: 3.0rem;
-        color: #555555;
-        text-align: center;
+        text-align: $center;
+        font-size: $text_sm;
+        margin:$m_2;
+        padding: $p_3;
+        color: map-get($map:$paleta, $key:gr );
         }
 
