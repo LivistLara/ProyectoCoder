@@ -1,0 +1,28 @@
+header img{
+    width: 100%;
+    height: auto;
+}
+/* star nav */
+nav{
+    background-color:#ffff;
+    padding: 20px;
+    display: inline-block
+}
+    nav img{
+        width: 160px;
+    }
+        nav div ul li {
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Montserrat',
+            sans-serif;
+            font-size: 1.6rem;
+        }
+        nav div ul li a{
+            font-weight: 300;
+            color: #161616 !important;
+        }
+            nav div ul li:hover{
+                background-color: #e49ee0;
+                text-decoration: nome;
+            }

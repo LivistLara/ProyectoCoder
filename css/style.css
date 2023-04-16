@@ -35,34 +35,7 @@ p{
 }
 /* end text */
 /* star header */
-header img{
-    width: 100%;
-    height: auto;
-}
-/* star nav */
-nav{
-    background-color:#ffff;
-    padding: 20px;
-    display: inline-block
-}
-    nav img{
-        width: 160px;
-    }
-        nav div ul li {
-            list-style: none;
-            text-decoration: none;
-            font-family: 'Montserrat',
-            sans-serif;
-            font-size: 1.6rem;
-        }
-        nav div ul li a{
-            font-weight: 300;
-            color: #161616 !important;
-        }
-            nav div ul li:hover{
-                background-color: #e49ee0;
-                text-decoration: nome;
-            }
+
 
 .text-style__tittle{
     text-align: center;
@@ -81,17 +54,7 @@ nav{
         text-align: center;
     }
 /* selectores de etiqueta */
-.bg-pattern{
-/* background-image: url(../img/background/pattern_1.png) */
-background-color: #fffcfc;
-}
-.bg_wrap_yellow{
-    background-image: url(../img/background/onda_yellow.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
 
-}
     /* CONTENEDORES */
     .contenedor-text{
         height: auto;
@@ -285,17 +248,6 @@ background-color: #fffcfc;
         background-color: #f070a1;
     }
 
-/* imput */
-.form-label {
-    font-size: 1.6rem;
-}
-    .form-control{
-        font-size: 1.6rem;
-    }
-        .form-control:focus{
-            border-color: #e9dde0;
-            box-shadow: 0 0 0 0.25rem rgba(247, 235, 238, 0.25);
-        }
 
 
         /* @media para responsive */
