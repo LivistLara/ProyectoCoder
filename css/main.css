@@ -1,18 +1,306 @@
-/* Error: Undefined variable.
- *    ,
- * 17 |         background-color: map-get($map:$pale
- *    |                                        ^^^^^
- *    '
- *   scss\_body.scss 17:40  @import
- *   scss\main.scss 7:9     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 17 \2502          background-color: map-get($map:$pale\d\a    \2502                                         ^^^^^\a    \2575 \a   scss\\_body.scss 17:40  @import\a   scss\\main.scss 7:9     root stylesheet";
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,500&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3 {
+  color: #161616;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+p {
+  /* estilo */
+  color: #161616;
+  font-family: "Montserrat", sans-serif;
+  /* interliniado */
+  line-height: 2.5rem;
+  /* sangría */
+  text-indent: 1.6rem;
+}
+
+.text-style__tittle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 2rem;
+  padding: 3rem;
+}
+
+.text-style_p2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 2rem;
+  padding: 3rem;
+  color: #555555;
+}
+
+body {
+  background: rgb(233, 141, 216);
+  background: radial-gradient(circle, rgb(233, 141, 216) 4%, rgb(233, 141, 216) 10%, rgb(165, 233, 148) 49%, rgb(238, 235, 109) 74%, rgb(255, 254, 228) 89%);
+}
+
+@media (max-width: 768px) {
+  /* responsive para grid de galeria */
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "fot1 fot2" "fot3 fot4";
+  }
+  /* responsive para grid de about_me */
+  #about_me {
+    grid-template-columns: 1fr;
+    grid-template: repeat(7, 1fr);
+    grid-template-areas: "img" "img" "t1" "p1" "t2" "p2" "btn";
+  }
+  /* tamaño de letras */
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .card_pfolio {
+    height: 480px;
+  }
+}
+/* grid galeria */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "fot1 fot2" "fot1 fot3" "fot1 fot4";
+}
+
+.item {
+  margin: 2rem;
+}
+.item img {
+  width: 100%;
+  height: 1vh;
+  object-fit: cover;
+  border-radius: 4%;
+  filter: grayscale(0.7);
+}
+.item img:hover {
+  filter: none;
+}
+
+.foto1-grid {
+  grid-area: fot1;
+}
+
+.foto2-grid {
+  grid-area: fot2;
+}
+
+.foto3-grid {
+  grid-area: fot3;
+}
+
+.foto4-grid {
+  grid-area: fot4;
+}
+
+/* grid para page_about_me */
+#about_me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "img t1" "img p1" "img t2" "img p2" "img btn";
+}
+
+.img-grid {
+  grid-area: img;
+}
+
+.tittle1_grid {
+  grid-area: t1;
+}
+
+.p1_grid {
+  grid-area: p1;
+}
+
+.tittle2_grid {
+  grid-area: t2;
+}
+
+.p2_grid {
+  grid-area: p2;
+}
+
+.btn_grid {
+  grid-area: btn;
+}
+
+/* Contenedor Footer */
+.container-footer {
+  width: 100%;
+  height: auto;
+  margin: 4rem;
+  padding: 2rem;
+}
+
+.img_foto {
+  width: 50%;
+  height: 1vh;
+}
+
+.accordion-body img {
+  max-width: 100%;
+  height: auto;
+}
+.accordion-button {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.accordion:focus {
+  box-shadow: 0 0 0 0.25rem rgba(206, 109, 138, 0.25);
+}
+/* barras de progreso */
+.progress {
+  height: 2rem;
+  font-size: 1.6rem;
+  margin: 3rem;
+}
+/* imput */
+.form-label {
+  font-size: 1.6rem;
+}
+.form-control {
+  font-size: 1.6rem;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(247, 235, 238, 0.25);
+}
+
+/* Contenedor cards polfolio */
+.container-flex-lg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn--card__color:hover {
+  border-color: none;
+}
+
+/* Cards porfolio */
+.text-style {
+  color: #fffcfc;
+}
+
+.card-bg_img, .bg-black-img3, .bg-black-img2, .bg-black-img1 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #161616;
+}
+
+.bg-black-img1 {
+  background-image: url(../img/proyectos/portada_amazon.jpg);
+}
+.bg-black-img2 {
+  background-image: url(../img/proyectos/portada.png);
+}
+.bg-black-img3 {
+  background-image: url(../img/proyectos/Desktop-\1 .jpg);
+}
+
+.card_pfolio {
+  /* contenedor */
+  width: 60%;
+  height: 650px;
+  margin: 20px;
+  border-radius: 2%;
+  padding: 2rem;
+}
+
+/* flex cards_home */
+.card_items-flex {
+  width: 100%;
+  height: 100%;
+  margin: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-content: center;
+  background-color: rgba(22, 22, 22, 0.6);
+}
+
+.container-text__about-me {
+  width: 80%;
+  height: auto;
+  margin: 0 4.4rem;
+  padding: 2rem;
+  text-align: start;
+}
+
+/* cards_experiencia */
+.card {
+  border-color: hsla(40, 100%, 97%, 0.001);
+}
+
+.card-bg-2 {
+  background-color: #f070a1;
+}
+
+/* CONTENEDORES */
+.contenedor-text {
+  height: auto;
+  margin: 0 4.4rem;
+  padding: 2rem;
+  text-align: start;
+}
+
+/* BOTONES */
+.btn--card__color {
+  width: 90%;
+  background-color: rgba(226, 5, 141, 0.8901960784);
+  border-color: rgba(226, 5, 141, 0.8901960784);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+button a {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
