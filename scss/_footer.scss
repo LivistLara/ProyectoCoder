@@ -1,11 +1,8 @@
 /* Contenedor Footer */
 .container-footer{
-    width: 100%;
-    height: auto;
-    margin-top: 4.8rem;
-    padding: 2.0rem;
-}
+    @include contenedor($w100,$h_auto,4rem,$p_2);
+    }
 .img_foto{
-    width: 50%;
-    height: 1vh;
+    width: $w50;
+    height:$h_v1;
 }
