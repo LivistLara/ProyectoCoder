@@ -117,8 +117,8 @@ width: 90%;
 background-color: #e2058de3;
 border-color:#e2058de3;
 font-size: 1.8rem;
-text-decoration: nome;
+text-decoration: $no;
 }
 button a{
-    color: aliceblue;
+    color: map-get($map:$paleta, $key:wr );
 }
