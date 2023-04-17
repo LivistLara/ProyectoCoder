@@ -1,0 +1,124 @@
+/* arcordion */
+.accordion{
+    &-body img{
+        max-width: 100%;
+        height: auto;
+    }
+    &-button{
+        font-size: $text_md;
+        font-weight: $text_bold;
+    }
+    &:focus{
+        background-color:map-get($map:$paleta, $key:2);
+        border-color: map-get($map:$paleta, $key:6 );
+        box-shadow: 0 0 0 0.25rem rgba(206, 109, 138, 0.25);
+    }
+    &:not(.collapsed){
+        background-color: map-get($map:$pale
+        , $key:5)}
+}
+/* barras de progreso */
+.progress{
+    height: $h_2;
+    font-size: $text_sm;
+    background-color: map-get($map:$paleta
+    , $key:4 );
+    margin:$m_3;
+    &-bar{
+        background-color: map-get($map:$paleta, $key:3);
+    }
+}
+/* imput */
+.form{
+    &-label{font-size: $text_sm;
+    }
+    &-control{
+        font-size: $text_sm;
+        &:focus{
+            border-color: map-get($map:$paleta, $key:4 );
+            box-shadow: 0 0 0 0.25rem rgba(247, 235, 238, 0.25);
+            }
+    }
+}
+
+/* Contenedor cards polfolio */
+.container-flex-lg{
+    display:$flex;
+    flex-direction: $col;
+    align-items: $center;
+}
+.btn--card__color:hover{
+    background-color: map-get($map:$paleta, $key:8 );
+    border-color:$no
+}
+/* Cards porfolio */
+.text-style{
+    color: map-get($map:$pal
+    , $key:wr )
+}
+.card-bg_img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: map-get($map:$paleta, $key:bl );
+}
+.bg-black{
+    &-img1{
+        @extend .card-bg_img;
+        background-image:url(../img/proyectos/portada_amazon.jpg);
+    }
+    &-img2{
+        @extend .card-bg_img;
+        background-image:url(../img/proyectos/portada.png);
+    }
+    &-img3{
+        @extend .card-bg_img;
+        background-image:url(../img/proyectos/Desktop\-\1.jpg);
+    }
+}
+    .card_pfolio{
+        /* contenedor */
+        width: 60%;
+        height: 650px;
+        margin:20px;
+        border-radius: 2%;
+        padding: 2.0rem;
+    }
+
+        /* flex cards_home */
+        .card_items-flex{
+            @include contenedor($w100,100%,$m_2,$p_3);
+            @include flex ($col,$der,$center);
+            background-color: rgb(22, 22, 22,0.6);
+        }
+        .container-text__about-me {
+            width: $w80;
+            height: $h_auto;
+            margin: 0 4.4rem;
+            padding: $p_2;
+            text-align: $izq;
+        }
+/* cards_experiencia */
+.card{
+    border-color:hsl(40, 100%, 97%,0.1%);
+}
+    .card-bg-2{
+        background-color: #f070a1;
+    }
+ /* CONTENEDORES */
+.contenedor-text{
+    height: auto;
+    margin: 0 4.4rem;
+    padding: 2.0rem;
+    text-align: start;
+}
+/* BOTONES */
+.btn--card__color {
+width: 90%;
+background-color: #e2058de3;
+border-color:#e2058de3;
+font-size: 1.8rem;
+text-decoration: nome;
+}
+button a{
+    color: aliceblue;
+}

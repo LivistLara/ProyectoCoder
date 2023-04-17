@@ -1,26 +1,24 @@
 /* grid galeria */
 .grid-container {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    @include grid(repeat(2, 1fr),repeat(3, 1fr));
     grid-template-areas:
     "fot1 fot2"
     "fot1 fot3"
     "fot1 fot4";
 }
 .item{
-    margin: 1.2rem;;
-}
-    .item img {
-        width: 100%;
-        height: 100%;
+    margin:$m_2;
+    img {
+        width: $w100;
+        height: $h_v1;
         object-fit: cover;
         border-radius: 4%;
         filter: grayscale(0.7);
+        &:hover{
+        filter:$no;
+        }
     }
-    .item img:hover{
-        filter:none;
-    }
+}
 
 .foto1-grid{
     grid-area: fot1;
@@ -35,17 +33,15 @@
     grid-area: fot4;
 }
         /* grid para page_about_me */
-#about_me{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template: repeat(5,180px);
+#about_me {
+    @include grid(1fr 1fr,repeat(5,1fr));
     grid-template-areas:
     "img t1"
     "img p1"
     "img t2"
     "img p2"
-    "img btn";
-}
+    "img btn";}
+
     .img-grid{
         grid-area: img;
     }
@@ -64,10 +60,3 @@
     .btn_grid{
         grid-area: btn;
     }
-        .container-text__about-me {
-            width: 80%;
-            height: auto;
-            margin: 0 4.4rem;
-            padding: 2.0rem;
-            text-align: start;
-        }

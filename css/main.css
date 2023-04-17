@@ -26,7 +26,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 h5 {
@@ -40,7 +40,7 @@ p {
   /* interliniado */
   line-height: 2.5rem;
   /* sangría */
-  text-indent: 1.5rem;
+  text-indent: 1.6rem;
 }
 
 .text-style__tittle {
@@ -53,7 +53,7 @@ p {
 
 .text-style_p2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 2rem;
   padding: 3rem;
   color: #555555;
@@ -132,24 +132,22 @@ nav div ul li:hover {
 /* grid galeria */
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "fot1 fot2" "fot1 fot3" "fot1 fot4";
 }
 
 .item {
-  margin: 1.2rem;
+  margin: 2rem;
 }
-
 .item img {
   width: 100%;
-  height: 100%;
+  height: 1vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4%;
   filter: grayscale(0.7);
 }
-
 .item img:hover {
   filter: none;
 }
@@ -174,7 +172,7 @@ nav div ul li:hover {
 #about_me {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template: repeat(5, 180px);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas: "img t1" "img p1" "img t2" "img p2" "img btn";
 }
 
@@ -202,14 +200,6 @@ nav div ul li:hover {
   grid-area: btn;
 }
 
-.container-text__about-me {
-  width: 80%;
-  height: auto;
-  margin: 0 4.4rem;
-  padding: 2rem;
-  text-align: start;
-}
-
 /* Contenedor Footer */
 .container-footer {
   width: 100%;
@@ -221,140 +211,4 @@ nav div ul li:hover {
 .img_foto {
   width: 50%;
   height: 1vh;
-}
-
-/* arcordion */
-.accordion-button {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.accordion-button:focus {
-  background-color: #f070a1;
-  border-color: #ee879d;
-  box-shadow: 0 0 0 0.25rem rgba(206, 109, 138, 0.25);
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #f8b1cc;
-}
-
-.accordion-body img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* barras de progreso */
-.progress {
-  height: 2rem;
-  font-size: 1.6rem;
-  background-color: #fad8e9;
-  margin: 3rem;
-}
-
-.progress-bar {
-  background-color: #ca599b;
-}
-
-/* imput */
-.form-label {
-  font-size: 1.6rem;
-}
-
-.form-control {
-  font-size: 1.6rem;
-}
-
-.form-control:focus {
-  border-color: #e9dde0;
-  box-shadow: 0 0 0 0.25rem rgba(247, 235, 238, 0.25);
-}
-
-/* Contenedor cards polfolio */
-.container-flex-lg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.btn--card__color:hover {
-  background-color: rgba(107, 3, 67, 0.8901960784);
-  border-color: rgba(107, 3, 67, 0.8901960784);
-}
-
-/* Cards porfolio */
-.text-style {
-  color: aliceblue;
-}
-
-.bg-black-img1 {
-  background-image: url(../img/proyectos/portada_amazon.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #161616;
-}
-
-.bg-black-img2 {
-  background-image: url(../img/proyectos/portada.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #161616;
-}
-
-.bg-black-img3 {
-  background-image: url(../img/proyectos/Desktop\ -\ 1.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #161616;
-}
-
-.card_pfolio {
-  /* contenedor */
-  width: 60%;
-  height: 650px;
-  margin: 20px;
-  border-radius: 2%;
-  padding: 2rem;
-}
-
-/* flex cards_home */
-.card_items-flex {
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  background-color: rgba(22, 22, 22, 0.6);
-}
-
-/* cards_experiencia */
-.card {
-  border-color: hsla(40, 100%, 97%, 0.001);
-}
-
-.card-bg-2 {
-  background-color: #f070a1;
-}
-
-/* CONTENEDORES */
-.contenedor-text {
-  height: auto;
-  margin: 0 4.4rem;
-  padding: 2rem;
-  text-align: start;
-}
-
-/* BOTONES */
-.btn--card__color {
-  width: 90%;
-  background-color: rgba(226, 5, 141, 0.8901960784);
-  border-color: rgba(226, 5, 141, 0.8901960784);
-  font-size: 1.8rem;
-  -webkit-text-decoration: nome;
-          text-decoration: nome;
-}
-
-button a {
-  color: aliceblue;
 }/*# sourceMappingURL=main.css.map */

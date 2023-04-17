@@ -1,0 +1,22 @@
+//contenedor
+@mixin contenedor($w,$h,$m,$p){
+    width: $w;
+    height: $h;
+    margin: $m;
+    padding: $p;
+}
+//@include contenedor($w100,$h_auto,$m_2,$p_3)
+
+//flex
+@mixin flex($dir,$just,$align){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-content: $align;
+}
+//grid
+@mixin grid($g_col,$g_row){
+    display: grid;
+    grid-template-columns: $g_col;
+    grid-template-rows: $g_row;
+}

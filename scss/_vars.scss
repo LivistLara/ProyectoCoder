@@ -1,16 +1,19 @@
 // fonts_Textos
 $main_font:"Montserrat", sans-serif;
 $text_xs: 1.4rem;
-$text_sm: 1.5rem;
+$text_sm: 1.6rem;
 $text_md: 1.8rem;
 $text_lg: 2.0rem;
 $text_xl: 2.5rem;
 $text_bold: bold;
 $text_lg: 300;
+
+//alineacion
 $center: center;
 $izq: start;
 $der: end;
 $no: none;
+
 
 //Maps paleta de colores//
 $paleta:(
@@ -37,6 +40,7 @@ $w50: 50%;
 
 //heigth
 $h_auto: auto;
+$h_100: 100%;
 $h_2: 2rem;
 $h_v1: 1vh;
 
@@ -48,3 +52,11 @@ $p_2: 2rem;
 $m_2: 2rem;
 $m_3: 3rem;
 $m_4: 4rem;
+
+//display
+$flex: flex;
+$grid: grid;
+
+//direcciones
+$col: column;
+$fila: row;
