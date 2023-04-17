@@ -1,28 +1,33 @@
-header img{
+header {
+    img{
     width: 100%;
     height: auto;
+    }
 }
 /* star nav */
 nav{
     background-color:#ffff;
     padding: 20px;
-    display: inline-block
-}
-    nav img{
+    display: inline-block;
+    img {
         width: 160px;
     }
-        nav div ul li {
-            list-style: none;
-            text-decoration: none;
-            font-family: 'Montserrat',
-            sans-serif;
-            font-size: 1.6rem;
-        }
-        nav div ul li a{
-            font-weight: 300;
-            color: #161616 !important;
-        }
-            nav div ul li:hover{
-                background-color: #e49ee0;
-                text-decoration: nome;
+    div {
+        ul {
+            li {
+                list-style: $no;
+                text-decoration: $no;
+                font-family:$main_font;
+                font-size: $text_sm;
+                a{
+                    font-weight: $text_lg;
+                    color:map-get($map:$paleta, $key:bl ) !important;
+                }
+            &:hover{
+                background-color:map-get($map:$paleta, $key:6);
+                text-decoration: $no;
             }
+            }
+        }
+    }
+}
