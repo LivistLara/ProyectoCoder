@@ -80,7 +80,7 @@
     }
     &-img3{
         @extend .card-bg_img;
-        background-image:url(../img/proyectos/Desktop\-\1.jpg);
+        background-image:url(../img/proyectos/Desktop\ -\ 1.jpg);
     }
 }
     .card_pfolio{
@@ -99,18 +99,15 @@
             background-color: rgb(22, 22, 22,0.6);
         }
         .container-text__about-me {
-            width: $w80;
-            height: $h_auto;
-            margin: 0 4.4rem;
-            padding: $p_2;
-            text-align: $izq;
+            @include contenedor ($w80,$h_auto,$m_3,$p_3);
+            text-align:$center
         }
 /* cards_experiencia */
 .card{
     border-color:hsl(40, 100%, 97%,0.1%);
-}
-    .card-bg-2{
-        background-color: #f070a1;
+        &-bg-2{
+        background-color:#f070a1;
+        }
     }
  /* CONTENEDORES */
 .contenedor-text{
@@ -122,11 +119,11 @@
 /* BOTONES */
 .btn--card__color {
 width: 90%;
-background-color: #e2058de3;
-border-color:#e2058de3;
-font-size: 1.8rem;
+background-color: map-get($map:$paleta, $key:1 );
+border-color:$no;
+font-size: $text_md;
 text-decoration: $no;
 }
 button a{
-    color:white;
+    color:map-get($map:$paleta, $key:wr );
 }
