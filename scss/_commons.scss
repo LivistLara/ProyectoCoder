@@ -12,7 +12,7 @@ h1{
     font-size: $text_xl;
 }
     h2{
-        font-size:$text_lg;
+        font-size:$text_xl;
     }
         h3{
             font-size: $text_md;
@@ -47,3 +47,7 @@ p{
         color: map-get($map:$paleta, $key:gr );
         }
 
+body{
+    background: rgb(233,141,216);
+    background: radial-gradient(circle, rgba(233,141,216,1) 4%, rgba(233,141,216,1) 10%, rgba(165,233,148,1) 49%, rgba(238,235,109,1) 74%, rgba(255,254,228,1) 89%);
+}
