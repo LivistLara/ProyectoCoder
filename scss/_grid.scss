@@ -34,7 +34,7 @@
 }
         /* grid para page_about_me */
 #about_me {
-    @include grid(1fr 1fr,repeat(5,1fr));
+    @include grid(1fr 1fr,(5,160px));
     grid-template-areas:
     "img t1"
     "img p1"

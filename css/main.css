@@ -64,7 +64,11 @@ body {
   background: radial-gradient(circle, rgb(233, 141, 216) 4%, rgb(233, 141, 216) 10%, rgb(165, 233, 148) 49%, rgb(238, 235, 109) 74%, rgb(255, 254, 228) 89%);
 }
 
-@media (max-width: 768px) {
+footer {
+  background-color: #fffcfc;
+}
+
+@media (max-width: 1100px) {
   /* responsive para grid de galeria */
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -74,7 +78,7 @@ body {
   /* responsive para grid de about_me */
   #about_me {
     grid-template-columns: 1fr;
-    grid-template: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-template-areas: "img" "img" "t1" "p1" "t2" "p2" "btn";
   }
   /* tamaño de letras */
@@ -170,7 +174,7 @@ nav div ul li:hover {
 #about_me {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 5, 160px;
   grid-template-areas: "img t1" "img p1" "img t2" "img p2" "img btn";
 }
 
@@ -198,19 +202,7 @@ nav div ul li:hover {
   grid-area: btn;
 }
 
-/* Contenedor Footer */
-.container-footer {
-  width: 100%;
-  height: auto;
-  margin: 4rem;
-  padding: 2rem;
-}
-
-.img_foto {
-  width: 50%;
-  height: 1vh;
-}
-
+/* arcordion */
 .accordion-body img {
   max-width: 100%;
   height: auto;
@@ -220,14 +212,21 @@ nav div ul li:hover {
   font-weight: bold;
 }
 .accordion:focus {
+  background-color: #f070a1;
+  border-color: #ee879d;
   box-shadow: 0 0 0 0.25rem rgba(206, 109, 138, 0.25);
 }
 /* barras de progreso */
 .progress {
   height: 2rem;
   font-size: 1.6rem;
+  background-color: #fad8e9;
   margin: 3rem;
 }
+.progress-bar {
+  background-color: #ca599b;
+}
+
 /* imput */
 .form-label {
   font-size: 1.6rem;
@@ -325,8 +324,24 @@ nav div ul li:hover {
   text-decoration: none;
 }
 
+button {
+  border-radius: 4px;
+}
 button a {
   color: #fffcfc;
+}
+
+/* Contenedor Footer */
+.container-footer {
+  width: 100%;
+  height: auto;
+  margin: 4rem;
+  padding: 2rem;
+}
+
+.img_foto {
+  width: 50%;
+  height: 1vh;
 }
 
 /*# sourceMappingURL=main.css.map */
