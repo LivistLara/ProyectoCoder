@@ -6,7 +6,7 @@ header {
 }
 /* star nav */
 nav{
-    background-color:#ffff;
+    background-color: map-get($map:$paleta, $key:wr );
     padding: 20px;
     display: inline-block;
     img {
@@ -17,14 +17,13 @@ nav{
             li {
                 list-style: $no;
                 text-decoration: $no;
-                font-family:$main_font;
                 font-size: $text_sm;
                 a{
                     font-weight: $text_lg;
-                    color:map-get($map:$paleta, $key:bl ) !important;
+                    color:map-get($map:$paleta, $key:bl) !important;
                 }
             &:hover{
-                background-color:map-get($map:$paleta, $key:6);
+                background-color:#f8b1cc;
                 text-decoration: $no;
             }
             }

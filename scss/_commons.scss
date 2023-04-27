@@ -1,13 +1,8 @@
-*{
-    font-family: $main_font;
-}
 html{
     font-size: 62.5%;
 }
-h1,h2,h3{
-    color:map-get($map:$paleta, $key:bl );
-    /* font-family: 'Montserrat', sans-serif; */
-}
+h1,h2,h3{ color:map-get($map:$paleta, $key:bl );}
+
 h1{
     font-size: $text_xl;
 }
@@ -24,8 +19,9 @@ h1{
                     font-size: $text_xs;
                 }
 p{
+    font-size: $text_sm;
     /* estilo */
-    color: map-get($map:$paleta, $key:bl); font-family: $main_font;
+    color: map-get($map:$paleta, $key:bl);
     /* interliniado */
     line-height: $text_xl;
     /* sangría */
@@ -53,4 +49,10 @@ body{
 }
 footer {
     background-color: map-get($map:$paleta, $key:wr );
+}
+button{
+    font-size: $text_sm;
+    a{
+        font-size: $text_sm;
+    }
 }

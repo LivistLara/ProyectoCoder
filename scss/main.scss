@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,500&display=swap');
 @import "_vars";
 @import "_mixin";
 @import "_commons";
-@import "_media";
 @import "_nav";
-@import "_grid";
 @import "_body";
 @import "_footer";
+@import "_media";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 

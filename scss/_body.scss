@@ -1,3 +1,66 @@
+/* grid galeria */
+.grid-container {
+    @include grid(repeat(2, 1fr),repeat(3, 1fr));
+    grid-template-areas:
+    "fot1 fot2"
+    "fot1 fot3"
+    "fot1 fot4";
+}
+.item{
+    margin:$m_2;
+    img {
+        width: $w100;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4%;
+        filter: grayscale(0.7);
+        &:hover{
+        filter:$no;
+        }
+    }
+}
+
+.foto1-grid{
+    grid-area: fot1;
+}
+.foto2-grid{
+    grid-area: fot2;
+}
+.foto3-grid{
+    grid-area: fot3;
+}
+.foto4-grid{
+    grid-area: fot4;
+}
+        /* grid para page_about_me */
+#about_me {
+    @include grid(1fr 1fr,(5,160px));
+    grid-template-areas:
+    "img t1"
+    "img p1"
+    "img t2"
+    "img p2"
+    "img btn";}
+
+    .img-grid{
+        grid-area: img;
+    }
+    .tittle1_grid{
+        grid-area: t1;
+    }
+    .p1_grid{
+        grid-area: p1;
+    }
+    .tittle2_grid{
+        grid-area: t2;
+    }
+    .p2_grid{
+        grid-area: p2;
+    }
+    .btn_grid{
+        grid-area: btn;
+    }
+
 /* arcordion */
 .accordion{
     &-body img{
