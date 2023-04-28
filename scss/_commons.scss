@@ -44,8 +44,7 @@ p{
         }
 
 body{
-    background: rgb(233,141,216);
-    background: radial-gradient(circle, rgba(233,141,216,1) 4%, rgba(233,141,216,1) 10%, rgba(165,233,148,1) 49%, rgba(238,235,109,1) 74%, rgba(255,254,228,1) 89%);
+    background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
 }
 footer {
     background-color: map-get($map:$paleta, $key:wr );
